@@ -1,0 +1,12 @@
+#Directoris
+.gradle/
+.idea/
+build/
+gradle/
+src/test/
+
+#Archius
+build.gradle
+gradlew
+gradlew.bat
+settings.gradle
