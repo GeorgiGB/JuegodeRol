@@ -23,10 +23,9 @@ public abstract class Player
   public Player()
   {
     this.setName("No name");
-    this.setAttackPoints(0);
-    this.setDefensePoints(0);
-    this.setLife(0);
-
+    this.setAttackPoints(1);
+    this.setDefensePoints(1);
+    this.setLife(1);
   }
 
   //Metodos
