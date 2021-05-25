@@ -29,10 +29,5 @@ public class JuegoDeRol
     //crear warrior
     Warrior kratos = new Warrior("Kratos", 17, 5, 35);
     System.out.println("   Guerrero creado");
-
-    john_smith.attack(martian_pk);
-    martian_pk.attack(john_smith);
-    kratos.attack(john_smith);
-
   }
 }
