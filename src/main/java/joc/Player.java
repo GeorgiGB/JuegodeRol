@@ -6,9 +6,9 @@ public abstract class Player
 {
   //Atributos
   private String name;
-  private int attackPoints;
-  private int defensePoints;
-  private int life;
+  public int attackPoints;
+  public int defensePoints;
+  public int life;
 
   //Constructor general
   public Player(String name, int attackPoints, int defensePoints, int life)
@@ -33,46 +33,6 @@ public abstract class Player
   public String toString()
   {
     return name + " PA " + attackPoints + " / " + " PD " + defensePoints + " PV " + life;
-  }
-
-  public String getName()
-  {
-    return name;
-  }
-
-  public int getAttackPoints()
-  {
-    return attackPoints;
-  }
-
-  public int getDefensePoints()
-  {
-    return defensePoints;
-  }
-
-  public int getLife()
-  {
-    return life;
-  }
-
-  public void setName(String name)
-  {
-    this.name = name;
-  }
-
-  public void setAttackPoints(int attackPoints)
-  {
-    this.attackPoints = attackPoints;
-  }
-
-  public void setDefensePoints(int defensePoints)
-  {
-    this.defensePoints = defensePoints;
-  }
-
-  public void setLife(int life)
-  {
-    this.life = life;
   }
 
   //Metodo atacar
@@ -144,5 +104,45 @@ public abstract class Player
       info = 0;//si la vida cae a 0 se lo indicamos
     }
     System.out.println(getName() + " es golpeado con " + attackPoints + " puntos y se defiende con " + getDefensePoints() + " .Vidas: " + bLife + " - " + info + " = " + getLife());
+  }
+
+  public String getName()
+  {
+    return name;
+  }
+
+  public int getAttackPoints()
+  {
+    return attackPoints;
+  }
+
+  public int getDefensePoints()
+  {
+    return defensePoints;
+  }
+
+  public int getLife()
+  {
+    return life;
+  }
+
+  public void setName(String name)
+  {
+    this.name = name;
+  }
+
+  public void setAttackPoints(int attackPoints)
+  {
+    this.attackPoints = attackPoints;
+  }
+
+  public void setDefensePoints(int defensePoints)
+  {
+    this.defensePoints = defensePoints;
+  }
+
+  public void setLife(int life)
+  {
+    this.life = life;
   }
 }
